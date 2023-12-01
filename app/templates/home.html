@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Webpage</title>
+        <script src="https://kit.fontawesome.com/1ba212a0ff.js" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap" rel="stylesheet">  
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@1,300&display=swap" rel="stylesheet"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+     </head>
+     <body>
+          <nav class="navbar navbar-expand-lg navbar-light sticky-top" id="nav">
+            <div class="container-fluid">
+            <a class="navbar-brand text-light" id="serenity" href="{% url 'home' %}">  Welcome to Serenity Spa!</a>
+               <!-- <a class="navbar-brand" href="{% url 'home' %}">
+                 <img src="{% static 'img/s.png' %}" id="logo"  alt="" width="70" height="45"> 
+               </a> -->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active text-light" aria-current="page" href="{% url 'home' %}">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active text-light" aria-current="page" href="{% url 'us' %}">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active text-light" aria-current="page" href="{% url 'ourservices' %}">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active text-light" aria-current="page" href="{% url 'blog' %}">Blog</a>
+                  </li>
+                </ul>
+              </div> 
+            </div>
+          </nav>  
+         </div>
+          <div class="container-fluid px-0 mx-0">
+            <img src="{% static 'img/wallpaper.jpg' %}" class="img-fluid" alt="banner">
+          </div>
+         </div> 
+         <!-- Fundi i Navbar-->
+         <main>
+             <!-- Teksti hyres -->
+             <div class="container"id="maintext" > 
+                <div class="row">
+                    <div class="text-center">
+                         <p id="txt"> Welcome to your visual journey through Serenity Spa! <br>
+                            We are a warm and well-designed SPA located in the center of Tirana. Serenity Spa has everything for any spa lover. 
+                            With an unbelievable view of the city and the lake, you can experience luxurious wellness.
+                         </p> 
+                            <!--Serenity Spa offers a unique feel. A stress -free oasis for rest and relaxation that invites you 
+                            to step into the world where time honoured traditions 
+                           and spa rituals bring you an authentic experience of total well being.--> 
+                    </div>
+                </div>
+             </div>  
+                <!-- <h3 class="display-6 text-center my-5">Welcome to your relaxing corner!
+                    We are a warm and well-designed SPA located in the center of Tirana. 
+                </h3> -->
+              <!-- <div class="row">
+                  <div class="col-sm-12 col-md-6">
+                    <div class="text-center">
+                    <img src="pic1.jpg" class="rounded mx-auto d-block" " width="200px" height="300px">
+                    <h5 class="text-center"> Facial Treatmants</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis sint,
+                      quo soluta, illum quibusdam itaque tempore inventore quos vitae nobis necessitat
+                      ibus, beatae porro quidem mollitia vel eligendi repellat ut velit?</p>
+                    </div>
+                    
+                    </div>
+                  <div class="col-em-12 col-md-6">
+                      <div class="text-center">
+                    <img src="pic3.jpg" class="rounded mx-auto d-block" alt=" " width="200px" height="300px">
+                    <h5 class="text-center">Body Treatmants</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis sint,
+                      quo soluta, illum quibusdam itaque tempore inventore quos vitae nobis necessitat
+                      ibus, beatae porro quidem mollitia vel eligendi repellat ut velit?</p>
+                    </div> 
+                    </div>
+                </div>
+              </div> -->
+              <!--Fillim Carousel -->
+              <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="{% static 'img/facial.jpg' %}" class="d-block w-100" alt="facial">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h4 class="display-6 text-light "> Refresh your face and soul! </h4>
+                      <p class="text-light" > Taking care of your skin is the best decision you could ever make. Serenity Spa has the best solution for you!</p>                      
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img src="{% static 'img/jacuzzi.jpg' %}" class="d-block w-100" alt="jacuzzi">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h4 class="display-6 text-center text-light">Explore our Spa! </h4>
+                      <p class="display text-light">What makes us special is the design and the details as well. Visit us to experience a private and luxury relaxation.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img src="{% static 'img/saunna.jpg' %}" class="d-block w-100" alt="sauna">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h4 class="display-6 text-center my-5 text-light "> Give yourself the luxury that you deserve! </h4>
+                      <p class="display text-light">People who visit the spa for treatments are generally happy. This happiness can be equated to positive energy and feel.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="{% static 'img/body.jpg' %}" class="d-block w-100" alt="massage">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h4 class="display-6 text-center my-5 text-light "> Make time for yourself! </h4>
+                      <p class="display text-light">Spa treatments have become one of the most common ways for people to take care of their bodies. 
+                        It works perfect for taking care of both physical and mental health.</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              <div class="container" id="slideleft">
+                <div class="row">
+                    <div class="text-center">
+                         <p id="txt"> The most exclusive experience you can image.
+                           Inspired by ancient traditions and designed for your personal needs, ever one of our unique treatments
+                           has been created to bring calm to your mind, body and soul.
+                         </p>  
+                    </div>
+                  </div>  
+              </div>  
+              <hr>
+              <div class="container">
+                <div class="row">
+                    <div class="text-center">
+                         <p id="txt"> The most exclusive experience you can image.
+                           Inspired by ancient traditions and designed for your personal needs, ever one of our unique treatments
+                           has been created to bring calm to your mind, body and soul.
+                         </p> 
+                    </div>
+                  </div>  
+              </div>  
+         </main>
+        <!-- fundi i carousel-->  
+         <!--fillimi i footer-->
+       <footer class=" text-dark pt-5 pb-4" id="footer">
+          <div class="container text-center text-md-left" >
+              <div class="row text-center text-md-left">
+               <div class="row">
+                 <div class="col-sm-6">
+                     <div class="card-body">
+                       <div class="card-text text-light"> 
+                         <h6 class=" mb-4 font-weight-bold text-light"> Contact us: </h6>
+                         <p>
+                          <i class="fas fa-map-marker-alt"></i> Tirana, Albania
+                         </p>
+                         <p>
+                          <i class="fas fa-envelope"></i> info@serenityspa.com
+                         </p>
+                         <p>
+                          <i class="fas fa-phone "></i> 00 355 69 20 90 909
+                         </p>
+                         <a href="www.instagram.com">
+                         <i class="fab fa-instagram text-light"></i>
+                        </a>
+                        <a href="www.facebook.com">
+                         <i class="fab fa-facebook text-light" ></i> 
+                        </a>
+                        <a href="www.pinterest">
+                         <i class="fab fa-pinterest text-light"></i>
+                        </a>
+                       </div>
+                     </div>
+                 </div>
+                 <div class="col-sm-6">
+                     <div class="card-body">
+                       <div class="card-text"> 
+                         <h6 class=" mb-4 font-weight-bold text-light" id=joinus> Join our community! <br>
+                            Sign up to our newsletters to recieve discounts and other Serenity's offerings. </h6>
+                         <div class="name-field"> 
+                           <i class="fas fa-user text-light"></i>
+                           <label for="name"> </label>
+                           <input type="text" id="name" placeholder="Full name"> <br>
+                          </div>
+                          <div class="mail-field">
+                            <i class="fas fa-envelope text-light"> </i>
+                            <label for="email"> </label>
+                            <input type="email" id="email" placeholder="name@example.com"> <br>
+                          </div>
+                          <div class="button-field">
+                            <button onclick="myFunction()" class="button"> Join Us</button> 
+                          </div>
+                       </div>
+                     </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </footer>  
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      <script type="text/javascript" src="{% static 'js/home.js' %}"> </script>
+    </body>
+</html>

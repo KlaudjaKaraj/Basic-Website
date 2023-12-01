@@ -1,0 +1,122 @@
+ul>li{
+    list-style: none;
+}
+
+#firsttext{
+    text-align: right;
+}
+h3{
+    color: #93a38dfa;
+}
+.nav-link{
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 20px;
+}
+.navbar{
+    background-color: #93a38dfa;
+}
+ul{
+    padding:0;
+    margin:0;
+    display:flex
+  }
+
+  ul li a{
+    text-decoration:none;
+    color:#ffffff;
+    font-size:21px;
+    display:block;
+    padding:11px 17px;
+    position:relative;
+  }
+  ul li a:before{
+    content:' ';
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:1px;
+    background-color:#ffffff;
+    transform:scaleX(0);
+    transition:all 0.5s;
+    transform-origin:left;
+    
+  }
+  ul li a:hover:before,ul li a:hover:after{
+    transform:scaleX(1);
+  }
+  ul li a:after{
+    content:' ';
+    position:absolute;
+    top:100%;
+    left:0;
+    width:100%;
+    height:1px;
+    background-color:#ffffff;
+    transform:scaleX(0);
+    transition:all 0.5s;
+    transform-origin:right;
+  }
+#righttxt{
+    padding-right: 50px;
+}
+#thisisourblog{
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: 27px;
+}
+#p1{
+    font-family: 'Michroma', sans-serif;
+    color: #93a38dfa;
+    font-size: 20px;
+    text-align: center;
+} 
+/* Main content- FUNDI */
+
+#meditation , #yoga, #reading , #journaling, #socialmedia{
+  vertical-align: middle;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+/* HOVER i fotove- fillimi */
+#meditation:hover{
+    opacity: 0.5;
+}
+#reading:hover{
+    opacity: 0.5;
+}
+#journaling:hover{
+    opacity: 0.5;
+}
+#socialmedia:hover{
+    opacity: 0.5;
+}
+#yoga:hover{
+    opacity: 0.5;
+}
+/* HOVER i fotove-fundi */
+
+h6{
+    color: #93a38dfa;
+}
+.link{
+    text-align: center;
+}
+.link > a{
+    color: #000000;
+}
+.link>a:hover{
+    color: #93a38dfa;
+}
+
+#footer{
+   background-color: #93a38dfa;
+   margin-top: 30px;
+}
+.fab{
+    color:#ffffff
+}
+.card-text>a{
+    text-decoration: none;
+    font-size: 20px;
+}

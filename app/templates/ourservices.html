@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Services </title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/ourservices.css' %}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap" rel="stylesheet"> 
+        <script src="https://kit.fontawesome.com/1ba212a0ff.js" crossorigin="anonymous"></script>  
+      </head>
+    <body>
+      <!--Fillim Navbar-->
+      <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand text-light" id="services" href="ourservices.html"> Check our services below!</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active text-light" aria-current="page" href="{% url 'home' %}">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-light" aria-current="page" href="{% url 'us' %}">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-light" aria-current="page" href="{% url 'ourservices' %}">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-light" aria-current="page" href="{% url 'blog' %}">Blog</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!--fund navbar-->
+
+      <!-- 
+        <div class="container">
+            <h3 class="display-6 text-center my-5" id="h3">Feel the touch of the Nature and spoil yourself with our treatmants!</h3>
+            <div class="row">
+              <div class="col-sm-12 col-md-6">
+                <div class="text-center">
+                 <h5>Healing Tradition</h5>
+                  <p class="text-start"> A combination of three luxurous healing rituals effortlessly blends together 
+                   for your signature experience. The Hawaiian Lomi-lomi body work, a firm but very relaxing massage
+                   using long movements, the Hot Stone massage that soothes tired muscles, and the sound therapy that 
+                   sends vibration and resonates in our body work hand in hand to help relieve your stress, calm your mind
+                   and warm your sensen. 
+                  </p>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6">
+                <img src="pic1.jpg" class="rounded img-fluid ms-5" alt=" " width="250px" height="350px">
+              </div>
+            </div>
+        </div>
+           <br>
+         <div class="container"id="container2">
+            <div class="row">
+              <div class="col-em-12 col-md-4">
+                <div class="text-center">
+                <h5>Aromatherapy</h5>
+                <p class="text-start"> The art of Aromatherapy is the healing power of scent combined 
+                  with the careful applied pressure that stimulates the nervous system which supports a healthy circulation. 
+                This treatmant offers a pleasurable selection of premium essential oil blends to relax destress and rejuvenates
+              you as you indulge in a complete body and face aromatherapy experience.</p>
+                </div>
+                </div>
+              <div class="col-sm-12 col-md-6">
+                <img src="pic2.jpg" class="rounded" alt=" " width="250px" height="350px">
+              </div>
+
+              </div>
+            </div>
+          -->
+        
+          <h3 class="display-6 text-center my-5" id="h3">Feel the touch of the Nature and spoil yourself with our treatmants!</h3>
+          
+          <!--Healing Tradition Fillimi -->
+          <div class="card mb-3 me-auto" style="max-width: 750px;" id="div1">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <figure>
+                  <img src="{% static 'img/massage.jpg' %}" class="img-fluid rounded-start" alt="massage" >
+                </figure>
+              </div>
+              <div class="col-md-8" >
+                <div class="card-body"></div>
+                  <h5 class="card-title text-center">Healing Tradition</h5>
+                  <p class="card-text">A combination of three luxurous healing rituals effortlessly blends together 
+                    for your signature experience. The Hawaiian Lomi-lomi body work, a firm but very relaxing massage
+                    using long movements, the Hot Stone massage that soothes tired muscles, and the sound therapy that 
+                    sends vibration and resonates in our body work hand in hand to help relieve your stress, calm your mind
+                    and warm your sensen. 
+                  </p>
+                  <h5 class="card-title text-center" id="price">70 min-35 Euro</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Healing Traditon Fundi-->
+          <!--Aromatherapy Fillimi-->
+          <div class="card mb-3 ms-auto" style="max-width: 750px;" id="div2">
+            <div class="row g-0">
+              
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Aromatherapy</h5>
+                  <p class="card-text">The art of Aromatherapy is the healing power of scent combined 
+                    with the careful applied pressure that stimulates the nervous system which supports a healthy circulation. 
+                  This treatmant offers a pleasurable selection of premium essential oil blends to relax destress and rejuvenates
+                you as you indulge in a complete body and face aromatherapy experience.
+                Aromatherapy with essential oil-scented massage oils and lotions may help to ease stress and anxiety. If you're considering trying aromatherapy massage,
+                 it's a good idea to talk with your healthcare provider first to discuss whether it's appropriate for you.</p>
+                 <h5 class="card-title text-center" id="price">60 min-35 Euro</h5>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <figure>
+                  <img src="{% static 'img/aromatherapy.jpg' %}" class="img-fluid rounded-start" alt="massage" >
+                </figure>
+              </div>
+            </div>
+          </div>
+          <!--Aromatherapy Fundi-->
+          <!--Hot Stone Massage fillimi -->
+          <div class="card mb-3 me-auto" style="max-width: 750px;" id="div1">
+            <div class="row g-0">
+              <div class="col-md-4">
+              <figure> 
+                <img src="{% static 'img/hotstone.jpg' %}" class="img-fluid rounded-start" alt="massage" >
+              </figure>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body"></div>
+                  <h5 class="card-title text-center">Hot Stone Massage</h5>
+                  <p class="card-text"> A deeply relaxing treatmant that encourages release of muscle tensions
+                     with the use of hot stones. The heat of the stone with the classic Swedish movements soothes and relaxes your body.
+                     The stones are smooth and flat and usually made of the volcanic rock type called basalt. These particular stones 
+                     are chosen because they retain heat. The stones used for a hot stone massage are placed in hot water to warm up 
+                     before being applied. They are then placed onto specific areas of the body.</p>
+                     <h5 class="card-title text-center" id="price">60 min-30 Euro</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Hot Stone Fund-->
+          <!--Thai Massage Fillimi-->
+          <div class="card mb-3 ms-auto" style="max-width: 750px;" id="div2">
+            <div class="row g-0">
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Thai Massage</h5>
+                  <p class="card-text">A "no-oil" massage that promotes physical strength,
+                     renewed energy and improved flexibility. The therapist works on the preassure points
+                      allowing the release of blockages and performs careful manipulations of the body through passive streching.
+                      Instead of the relaxing gliding and kneading motions characteristic of more popular forms of massage, Thai massage employs stretching,
+                      pulling, and rocking techniques to relieve tension and enhance flexibility and range of motion. It is sometimes called the "lazy person's yoga." 
+                      The therapist uses his or her hands, knees, legs, and feet to move you into a series of yoga-like 
+                      stretches and also applies deep muscle compression, joint mobilization, and acupressure.</p>
+                      <h5 class="card-title text-center" id="price">60 min-30 Euro</h5>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <figure> 
+                  <img src="{% static 'img/thaimassage.jpg' %}" class="img-fluid rounded-start" alt="massage" >
+                </figure>
+              </div>
+            </div>
+          </div>
+          <!--Thai Massage Fundi-->
+          <!--Reflexology Fillimi-->
+          <div class="card mb-3 me-auto" style="max-width: 750px;" id="div1">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <figure> 
+                  <img src="{% static 'img/reflexology.jpg' %}" class="img-fluid rounded-start" >
+                </figure>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Reflexology Massage</h5>
+                  <p class="card-text"> An energizing local massage for the tired, aching feet. In this massage therapy pressing technique like 
+                    rubbing and kneading is used by the therapist to provide comfort and relaxation of the whole body.
+                    Reflexology is one of the most popular types of massage. Beyond the feel-good effects of the treatment, 
+                    the practice and purpose go deeper than the skin and muscles. Kneading the soft fleshy ball of the foot, 
+                    pulling on the toes, tracing around the heel and pushing deep into the arch are just a few of the movements 
+                    you’ll experience during a treatment. </p>
+                      <h5 class="card-title text-center" id="price">60 min-30 Euro</h5>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+          <!--Reflexology Fundi-->
+          <!--Facemassage Fillimi-->
+          <div class="card mb-3 ms-auto" style="max-width: 750px;" id="div2">
+            <div class="row g-0">
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Facial Massage</h5>
+                  <p class="card-text">  The star of beauty treatmants. Youth is suited to all skin types and designed to provide
+                    spectacular results in terms of youth-looking skin. The unique lonization process enables rapid absorption of the active
+                  ingredients for exceptional effectiveness. </p>
+                      <h5 class="card-title text-center" id="price">60 min-25 Euro</h5>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <figure> 
+                 <img src="{% static 'img/face.jpg' %}" class="img-fluid rounded-start" >
+                </figure>
+              </div>
+            </div>
+          </div>
+          <!--Facemassage Fundi-->
+          <!--Footer Fillimi-->
+          <footer class=" text-dark pt-5 pb-4" id="footer">
+            <div class="col-md-12">
+               <div class="card-body text-center text-light">
+                  <a href="{% url 'home' %}">
+                   <img src="{% static 'img/s.png' %}" width="75px" height="60px">
+                  </a>
+                  <div class="card-text text-center" > 
+                    <p>Serenity Spa, your daily dose of relaxation! Find us on social media for more. </p>
+                    <a href="www.instagram.com">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                     <a href="www.facebook.com">
+                       <i class="fab fa-facebook" ></i> 
+                    </a>
+                     <a href="www.pinterest">
+                       <i class="fab fa-pinterest"></i>
+                     </a>
+                     <p> All rights reserved! </p>
+                    </div>                 
+               </div>
+            </div>
+    </footer>
+        <!--Footer Fundi-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
+</html>

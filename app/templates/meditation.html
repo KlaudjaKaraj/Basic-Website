@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <head> 
+        <title> Blog </title>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width initial-scale=1.0">
+            <link rel="stylesheet" type="text/css" href="{% static 'css/blog.css' %}">
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet"> 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap" rel="stylesheet">    
+<script src="https://kit.fontawesome.com/1ba212a0ff.js" crossorigin="anonymous"></script>    
+</head>
+    <body>
+        <!--fillim navbar-->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <a class="navbar-brand text-light" id="thisisourblog" href="{% static 'css/blog.css' %}"> Welcome to our blog</a>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active text-light" aria-current="page" href="{% url 'home' %}">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active text-light" aria-current="page" href="{% url 'us' %}">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active text-light" aria-current="page" href="{% url 'ourservices' %}">Service</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active text-light" aria-current="page" href="{% url 'blog' %}">Blog</a>
+                  </li>
+                  
+                </ul>
+                
+              </div>
+            </div>
+          </nav>
+          <!--fund navbar-->
+        <!-- fillim Artikulli-->
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-8" id="righttxt">
+                    <h3 class="display-6 text-center my-5">Meditation: A simple, fast way to reduce stress</h3>
+                    <p> Meditation can wipe away the day's stress, bringing with it inner peace. See how you can easily learn to practice meditation whenever you need it most.
+                      If stress has you anxious, tense and worried, consider trying meditation. Spending even a few minutes in meditation can restore your calm and inner peace.
+                      Anyone can practice meditation. It's simple and inexpensive, and it doesn't require any special equipment.
+                      And you can practice meditation wherever you are — whether you're out for a walk, riding the bus, waiting at the doctor's office or even in the middle of a difficult business meeting.
+                      Meditation has been practiced for thousands of years. Meditation originally was meant to help deepen understanding of the sacred and mystical forces of life. These days, meditation is commonly used for relaxation and stress reduction.
+                      Meditation is considered a type of mind-body complementary medicine. Meditation can produce a deep state of relaxation and a tranquil mind.
+                      During meditation, you focus your attention and eliminate the stream of jumbled thoughts that may be crowding your mind and causing stress. This process may result in enhanced physical and emotional well-being.
+                    </p>
+                    <div>
+                        <img src="{% static 'img/meditationpic.jpg' %}"  class="rounded mx-auto d-block" width="250" height="250">
+                      </div>
+                      <br>
+                      <p id="p1"> Understanding meditation</p>
+                      <p> Meditation has been practiced for thousands of years. Meditation originally was meant to help 
+                        deepen understanding of the sacred and mystical forces of life. These days, 
+                        meditation is commonly used for relaxation and stress reduction.
+                        Meditation is considered a type of mind-body complementary medicine. 
+                        Meditation can produce
+                        a deep state of relaxation and a tranquil mind.
+                        During meditation, you focus your attention and eliminate the stream of jumbled thoughts
+                         that may be crowding your mind and causing stress. This process may result in enhanced physical and emotional well-being.</p>
+                      <p id="p1"> Benefits of meditation</p>
+                      <p> Meditation can give you a sense of calm, peace and balance that can benefit both your
+                          emotional well-being and your overall health. And these benefits don't end when your 
+                          meditation session ends. Meditation can help carry you more calmly through your day
+                          and may help you manage symptoms of certain medical conditions.</p>
+                      <p id="p1"> Meditation and emotional well-being</p>
+                      <p> When you meditate, you may clear away the information overload that builds up every day 
+                          and contributes to your stress.
+                          The emotional benefits of meditation can include:
+                          <ol>
+                          <li>Gaining a new perspective on stressful situations</li>
+                          <li>Building skills to manage your stress</li>
+                          <li>Increasing self-awareness</li>
+                          <li>Focusing on the present</li>
+                          <li>Reducing negative emotions</li>
+                          <li>Increasing imagination and creativity</li>
+                          <li>Increasing patience and tolerance</li>
+                          </ol> 
+                        </p>
+                        <p id="p1"> Everyday ways to practice meditation </p>
+                        <p> Don't let the thought of meditating the "right" way add to your stress. 
+                          If you choose to, you can attend special meditation centers or group classes 
+                          led by trained instructors. But you can also practice meditation easily on your 
+                          own. And you can make meditation as formal or informal as you like, however it suits your
+                          lifestyle and situation. Some people build meditation into their daily routine. 
+                          For example, they may start and end each day with an hour of meditation. 
+                          But all you really need is a few minutes of quality time for meditation.
+                          Keep in mind, for instance, that it's common for your mind to wander during meditation, 
+                          no matter how long you've been practicing meditation. If you're meditating to calm your
+                           mind and your attention wanders, slowly return to the object, sensation or movement you're
+                           cusing on.Experiment, and you'll likely find out what types of meditation work best for 
+                           you and what you enjoy doing. Adapt meditation to your needs at the moment. Remember, 
+                           there's no right way or wrong way to meditate. What matters is that meditation helps you 
+                           reduce your stress and feel better overall.</p>
+                  </div>
+                <div class="col-sm-12 col-md-6 col-lg-4" id="righttxt">
+                    <div>
+                        <h6 class="display-6 text-center my-5"> What is Yoga? </h6>
+                          <div class="img-fluid text-center">
+                            <a href="{% url 'blog' %}"> <img src="{% static 'img/yogapic.jpg' %}"  id="yoga" alt="Avatar"> </a>
+                          </div>
+                        <p class="my-2">Dozens of scientific trials of varying quality have been published on yoga. While there's scope for more rigorous studies on its health benefits, most studies suggest yoga is a safe and effective way to increase physical activity, especially strength, flexibility and balance... </p>
+                          <div class="link"> 
+                            <a href="{% url 'blog' %}"> Read More </a>
+                          </div>
+                      </div>
+                     <div>
+                      <h6 class="display-6 text-center my-5"> How reading affects your brain. </h6>
+                      <div class="img-fluid text-center">
+                        <a href="{% url 'reading' %}"> <img src="{% static 'img/readingpic.jpg' %}"  id="reading" alt="Avatar"> </a>
+                      </div>
+                        <p  class="my-2">As you read these words, your brain is decoding a series of abstract symbols
+                          and synthesizing the results into complex ideas. It’s an amazing process. 
+                          The English writer Katie Oldham described the “surreal” act of reading a book this way:
+                         “You stare at marked slices of tree for hours on end, hallucinating vividly.”</p>
+                        <div class="link"> 
+                          <a href="{% url 'reading' %}"> Read More </a>
+                        </div>
+                      </div>
+                    <div>
+                      <h6 class="display-6 text-center my-5"> How journaling can help you reach your goals. </h6>
+                      <div class="img-fluid text-center">
+                        <a href="{% url 'journaling' %}"> <img src="{% static 'img/journalingpic.jpg' %}"  id="journaling" alt="Avatar"> </a>
+                      </div>
+                        <p class="my-2">Keeping a diary, or journaling (as we refer to it post-puberty), can feel like the territory of pimply, 
+                          hormonal teenagers crazed with fantasies about their first crush or grappling with their own quest for self-identity.
+                           Believe it or not though, some of the world’s greatest leaders were and are regular journal-keepers.</p>
+                        <div class="link"> 
+                          <a href="{% url 'journaling' %}"> Read More </a>
+                        </div>
+                      </div>
+                    <div>
+                      <h6 class="display-6 text-center my-5"> Mental health and its importance. </h6>
+                      <div class="img-fluid text-center">
+                        <a href="{% url 'socialmedia' %}"> <img src="{% static 'img/socialpic.jpg' %}"  id="socialmedia" alt="Avatar"> </a>
+                      </div>
+                        <p class="my-2" >A social media detox gives you a chance to clear your mind.
+                          We’re sucked into this online world of pretty filters on models and influencers,
+                           a friend’s curated version of their life in photos and captions,
+                           and news headlines designed to spark an emotional reaction.</p>
+                        <div class="link"> 
+                          <a href="{% url 'socialmedia' %}"> Read More </a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+          </div>
+          
+          <!--fillimi i FOOTER-->
+          <footer class=" text-dark pt-5 pb-4" id="footer">
+            <div class="col-md-12">
+               <div class="card-body text-center text-light">
+                  <a href="{% url 'home' %}">
+                   <img src="{% static 'img/s.png' %}" width="75px" height="50px">
+                  </a>
+                  <div class="card-text text-center" > 
+                    <p>Serenity Spa, your daily dose of relaxation! Find us on social media for more. </p>
+                    <a href="www.instagram.com">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                     <a href="www.facebook.com">
+                       <i class="fab fa-facebook" ></i> 
+                    </a>
+                     <a href="www.pinterest">
+                       <i class="fab fa-pinterest"></i>
+                     </a>
+                     <p> All rights reserved! </p>
+                    </div>
+               </div>
+            </div>
+    </footer>
+        <!--fundi i FOOTER-->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
+</html>

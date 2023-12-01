@@ -1,0 +1,117 @@
+.nav-link{
+    font-family: 'Julius Sans One', sans-serif;
+}
+#nav{
+    background-color: #93a38dfa;
+    font-size: 20px;
+} 
+#serenity{
+    font-family: 'Nothing You Could Do', cursive; 
+    font-size: 27px;
+}
+#txt{
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: 27px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+#logo{
+    margin-left: 300px;
+    
+}
+ul{
+    padding:0;
+    margin:0;
+    display:flex
+  }
+  ul li{
+    list-style:none;
+  }
+  
+  ul li a{
+    text-decoration:none;
+    color:#ffffff;
+    font-size:21px;
+    display:block;
+    padding:11px 17px;
+    position:relative;
+  }
+  ul li a:before{
+    content:' ';
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:1px;
+    background-color:#ffffff;
+    transform:scaleX(0);
+    transition:all 0.5s;
+    transform-origin:left;
+    
+  }
+  ul li a:hover:before,ul li a:hover:after{
+    transform:scaleX(1);
+  }
+  ul li a:after{
+    content:' ';
+    position:absolute;
+    top:100%;
+    left:0;
+    width:100%;
+    height:1px;
+    background-color:#ffffff;
+    transform:scaleX(0);
+    transition:all 0.5s;
+    transform-origin:right;
+  }
+  
+
+.carousel-inner{
+    height: 600px;
+}
+.carousel-inner > .carousel-item{
+    height: 600px;
+    /* width: 100vw; */
+    background:black;
+    overflow: hidden;
+}
+.carousel-inner > .carousel-item > img{
+    object-fit: cover;
+    opacity: 0.4;
+    height: 600px;
+
+}
+.carousel-inner > .carousel-item > p {
+    text-align: center;
+}
+
+hr{
+    display: inline-block;
+    margin-right:700px;
+    width:10%;
+}
+.card-text>a{
+    text-decoration: none;
+    font-size: 20px;
+}
+#footer{
+  background-color: #93a38dfa;
+}
+#joinus, .card-text{
+  font-family: 'Julius Sans One', sans-serif;
+}
+#maintext {
+    opacity: 1;
+    animation: slide-up 4s;
+}
+ @keyframes slide-up {
+
+    from {
+      line-height: 50em;
+    }
+
+    to {
+      line-height: 3em;
+   } 
+ }
+ 

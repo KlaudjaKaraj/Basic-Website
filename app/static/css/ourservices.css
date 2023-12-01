@@ -1,0 +1,141 @@
+#services{
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: 27px;
+  }
+  #h3{
+    color: #536b4afa;
+  }
+  .card-title{
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: 30px;
+  }
+  .nav-link{
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 20px;
+  }
+  .navbar{
+    background-color: #93a38dfa;
+  }
+  ul{
+      padding:0;
+      margin:0;
+      display:flex
+    }
+    ul li{
+      list-style:none;
+    }
+    
+    ul li a{
+      text-decoration:none;
+      color:#ffffff;
+      font-size:21px;
+      display:block;
+      padding:11px 17px;
+      position:relative;
+    }
+    ul li a:before{
+      content:' ';
+      position:absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:1px;
+      background-color:#ffffff;
+      transform:scaleX(0);
+      transition:all 0.5s;
+      transform-origin:left;
+      
+    }
+    ul li a:hover:before,ul li a:hover:after{
+      transform:scaleX(1);
+    }
+    ul li a:after{
+      content:' ';
+      position:absolute;
+      top:100%;
+      left:0;
+      width:100%;
+      height:1px;
+      background-color:#ffffff;
+      transform:scaleX(0);
+      transition:all 0.5s;
+      transform-origin:right;
+    }
+  #righttxt{
+    padding-right: 50px;
+  }
+  #container2{
+    float: right;
+  }
+  #div1, .card-title, .card-text{
+    border-style: none;
+    padding-left: 30px;
+    padding-bottom: 30px;
+  }
+  img{
+    padding-top: 20px;
+  }
+  #div2, .card-title, .card-text{
+    border-style: none;
+    padding-right: 30px;
+    padding-bottom: 30px;
+  }
+  h5{
+    font-family: 'Julius Sans One', sans-serif;
+  }
+  #price{
+    color: #b43d3d;
+  }
+  #footer{
+    background-color: #93a38dfa;
+  }
+  .fab{
+      color: #ffffff;
+  }
+  .card-text>a{
+      text-decoration: none;
+      font-size: 20px;
+  }
+  #div1 figure:hover img {
+      opacity: 1;
+      -webkit-animation: flash 1.5s;
+      animation: flash 1.5s;
+  }
+  @-webkit-keyframes flash {
+      0% {
+          opacity: .4;
+      }
+      100% {
+          opacity: 1;
+      }
+  }
+  @keyframes flash {
+      0% {
+          opacity: .4;
+      }
+      100% {
+          opacity: 1;
+      }
+  }
+  #div2 figure:hover img {
+      opacity: 1;
+      -webkit-animation: flash 1.5s;
+      animation: flash 1.5s;
+  }
+  @-webkit-keyframes flash {
+      0% {
+          opacity: .4;
+      }
+      100% {
+          opacity: 1;
+      }
+  }
+  @keyframes flash {
+      0% {
+          opacity: .4;
+      }
+      100% {
+          opacity: 1;
+      }
+  }
+  

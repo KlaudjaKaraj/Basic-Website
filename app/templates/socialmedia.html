@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <head> 
+        <title> Blog </title>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width initial-scale=1.0">
+            <link rel="stylesheet" type="text/css" href="{% static 'css/blog.css' %}">
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">  
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap" rel="stylesheet">   
+<script src="https://kit.fontawesome.com/1ba212a0ff.js" crossorigin="anonymous"></script>    
+</head>
+    <body>
+        <!--fillim navbar-->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <a class="navbar-brand text-light" id="thisisourblog" href="{% url 'blog' %}"> Welcome to our blog</a>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active text-light" aria-current="page" href="{% url 'home' %}">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active text-light" aria-current="page" href="{% url 'us' %}">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active text-light" aria-current="page" href="{% url 'ourservices' %}">Service</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active text-light" aria-current="page" href="{% url 'blog' %}">Blog</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <!--fund navbar-->
+        <!-- fillim Artikulli-->
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-8" id="righttxt">
+                    <h3 class="display-6 text-center my-5">Social media detox and its importance.</h3>
+                    <p> I’ve come a long way in my approach to using social media, especially since taking an Instagram sabbatical at the end of 2018. At the time, 
+                        I was basically having a quarter-life crisis and was an emotional wreck. I wasn’t feeling good about myself, and social media sure as hell 
+                        wasn’t helping me feel any better. (Dashboards filled with influencers, models, and people you haven’t cared about since 2013 will do that to you). 
+                        I got the intuitive hit that I needed to get rid of Instagram, and so like the ballsy Aries rising I am, I deleted my account on a whim. Not just 
+                        temporarily deactivate, but full on permanently erase everything. It was probably the most cathartic thing I’ve ever done. 
+                        It completely shifted how I showed up in the world, which sounds dramatic but is absolutely true. I suddenly had way more free time on my hands to do
+                        all the things I wanted to be doing rather than mindlessly scrolling. 
+                        I stopped thinking about the perfect shot to take when out with friends or at an event. I traveled without any intention to post about it to the world,
+                         foregoing the need to validate myself as someone who is interesting. I paid more attention to friends and family. I became more present in each moment.
+                    </p>
+                     <div>
+                        <img src="{% static 'img/socialpic.jpg' %}" class="rounded mx-auto d-block" width="250" height="250">
+                      </div>
+                      <br>
+                      <p id="p1">  Clear your mind.</p>
+                      <p> 
+                        A social media detox gives you a chance to clear your mind.
+                        We’re sucked into this online world of pretty filters on models and influencers, a friend’s curated version of their life in photos and captions,
+                         and news headlines designed to spark an emotional reaction.
+                        This is all a recipe for a disaster when it comes to our mental health. It’s unnecessary clutter, it’s informational junk food, 
+                        and ultimately most of it is useless to you besides disturbing your tranquility.
+                        Imagine how much better use of your time and mental energy could go into the things you actually care about, or changes you can actually affect on the world. 
+                        Taking a break from social media gives you a chance to take a step back and really evaluate what’s most important in your life and what is a much better use of your time and mental space.
+                      </p>
+                      <p id="p1"> More mindfulness.</p>
+                      <p> 
+                        One thing I’ve found when I’ve had to force myself off of social media for a while, was just how mindful I became of my device usage.
+                        It actually started to bother me.
+                        I caught myself several times, reaching for my phone, scrolling over to an app that I deleted. I found myself compulsively typing Twitter.com into my address bar before stopping myself.
+                        I became much more mindful during this period. I was no longer a zombie scrolling through feeds and moving from one social media app to another without putting much thought into it.
+                        I began to realize just how much mental real estate and time this stuff actually took from me and my life. It was pretty eye-opening. 
+                        Then I began to think about how many of my friends and family are caught up in this as well. 
+                        It helped me practice mindfulness more in my daily activities and routine. It forced me to be present and actually sit with the boredom and cravings I had.
+                      </p>
+                  </div>
+                <div class="col-sm-12 col-md-6 col-lg-4" id="righttxt">
+                    <div>
+                      <h6 class="display-6 text-center my-5"> What is Yoga? </h6>
+                      <div class="img-fluid text-center">
+                        <a href="{% url 'blog' %}"> <img src="{% static 'img/yogapic.jpg' %}" id="yoga" alt="Avatar"> </a>
+                      </div>
+                        <p class="my-2">Dozens of scientific trials of varying quality have been published on yoga. While there's scope for more rigorous studies on its health benefits, most studies suggest yoga is a safe and effective way to increase physical activity, especially strength, flexibility and balance... </p>
+                        <div class="link"> 
+                         <a href="{% url 'blog' %}"> Read More </a>
+                        </div>
+                      </div>
+                    <div>
+                      <h6 class="display-6 text-center my-5"> Meditation: A simple, fast way to reduce stress. </h6>
+                      <div class="img-fluid text-center">
+                        <a href="{% url 'meditation' %}"> <img src="{% static 'img/meditationpic.jpg' %}" id="meditation" alt="Avatar"> </a>
+                      </div>
+                        <p class="my-2"> Meditation can wipe away the day's stress, bringing with it inner peace. See how you can easily learn to practice
+                          meditation whenever you need it most. 
+                          If stress has you anxious, tense and worried, consider trying meditation.
+                          t's simple and inexpensive, and it doesn't require any special equipment...</p>
+                          <div class="link"> 
+                            <a href="{% url 'meditation' %}"> Read More </a>
+                          </div>
+                    </div>
+                    <div>
+                      <h6 class="display-6 text-center my-5"> How journaling can help you reach your goals. </h6>
+                      <div class="img-fluid text-center">
+                         <a href="{% url 'journaling' %}"> <img src="{% static 'img/journalingpic.jpg' %}" id="journaling" alt="Avatar"> </a>
+                      </div>
+                        <p class="my-2">Keeping a diary, or journaling (as we refer to it post-puberty), can feel like the territory of pimply, 
+                          hormonal teenagers crazed with fantasies about their first crush or grappling with their own quest for self-identity.</p>
+                        <div class="link"> 
+                            <a href="{% url 'journaling' %}"> Read More </a>
+                          </div>
+                    </div>
+                     <div>
+                       <h6 class="display-6 text-center my-5"> How reading affects your brain. </h6>
+                        <div class="img-fluid text-center">
+                          <a href="{% url 'reading' %}"> <img src="{% static 'img/readingpic.jpg' %}" id="reading" alt="Avatar"> </a>
+                         </div>
+                         <p class="my-2">As you read these words, your brain is decoding a series of abstract symbols and synthesizing the results into complex ideas. It’s an amazing process. The English writer Katie Oldham described the “surreal” act of reading a book this way: 
+                             “You stare at marked slices of tree for hours on end, hallucinating vividly.”</p>
+                         <div class="link"> 
+                            <a href="{% url 'reading' %}"> Read More </a>
+                          </div>
+                       </div>
+                     </div>
+                    </div>
+            </div>
+          <!--fillimi i FOOTER-->
+          <footer class=" text-dark pt-5 pb-4" id="footer">
+            <div class="col-md-12">
+               <div class="card-body text-center text-light">
+                  <a href="{% url 'home' %}">
+                   <img src="{% static 'img/s.png' %}" width="75px" height="50px">
+                  </a>
+                  <div class="card-text text-center" > 
+                    <p>Serenity Spa, your daily dose of relaxation! Find us on social media for more. </p>
+                    <a href="www.instagram.com">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                     <a href="www.facebook.com">
+                       <i class="fab fa-facebook" ></i> 
+                    </a>
+                     <a href="www.pinterest">
+                       <i class="fab fa-pinterest"></i>
+                     </a>
+                     <p> All rights reserved! </p>
+                    </div>
+               </div>
+            </div>
+         </footer>
+        <!--fundi i FOOTER-->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
+</html>

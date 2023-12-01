@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <head> 
+        <title> Blog </title>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width initial-scale=1.0">
+            <link rel="stylesheet" type="text/css" href="{% static 'css/blog.css' %}">
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">      
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap" rel="stylesheet">  
+<script src="https://kit.fontawesome.com/1ba212a0ff.js" crossorigin="anonymous"></script> 
+</head>
+    <body>
+        <!--fillim navbar-->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <a class="navbar-brand text-light" id="thisisourblog" href="{% url 'blog' %}">Welcome to our blog</a>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active text-light" aria-current="page" href="{% url 'home' %}">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active text-light" aria-current="page" href="{% url 'us' %}" >About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active text-light" aria-current="page" href="{% url 'ourservices' %}">Service</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active text-light" aria-current="page" href="{% url 'blog' %}">Blog</a>
+                  </li>
+                  
+                </ul>
+                
+              </div>
+            </div>
+          </nav>
+          <!--fund navbar-->
+        <!-- fillim Artikulli-->
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-8" id="righttxt">
+                    <h3 class="display-6 text-center my-5">How journaling can help you reach your goals.</h3>
+                    <p> Keeping a diary, or journaling (as we refer to it post-puberty), can feel like the territory of pimply, 
+                        hormonal teenagers crazed with fantasies about their first crush or grappling with their own quest for self-identity.
+                        Believe it or not though, some of the world’s greatest leaders were and are regular journal-keepers,
+                        and chances are that Winston Churchill didn’t and Barack Obama doesn’t merely record their brushes with love or musings on the popular clique. 
+                        If they did, however, it would be okay. After all, that’s the beauty of keeping a journal: there’s no wrong way to do it. 
+                        And, of course, there are these ten other awesome benefits that will genuinely improve your life.
+                    </p>
+                    <div>
+                        <img src="{% static 'img/journalingpic.jpg'%}" class="rounded mx-auto d-block" width="250" height="250">
+                      </div>
+                      <br>
+                      <p id="p1">  You’ll be able to better clarify your thoughts.</p>
+                      <p> Some cognitive psychologists argue that writing is thinking. Others believe only that it can transform your cognitive processing. 
+                          One point both sides seem to agree on, though, is the fact that writing forces you to examine your thoughts more critically and logically.
+                          In turn, journaling is an opportunity to work through and gain clarity on the ideas and notions that might otherwise exist as rolling tumbleweeds in your head.</p>
+                      <p id="p1"> You’ll be more organized and focused.</p>
+                      <p> Journals often get boxed in as places for cheesy people to record their deepest, darkest confessions or reveal the most vulnerable parts of their inner selves. 
+                          In reality though, they can simply be receptacles for to do lists, future goals, spur-of-the-moment ideas, random insights that you want to remember later, and more.
+                          By writing down this kind of information, you’ll be able to better order your life and hold yourself accountable even when you’re at your busiest.</p>
+                      
+                      <p id="p1"> Your mind will be quieter. </p>
+                      <p> 
+                        Offloading your racing thoughts onto a nonjudgmental medium that isn’t attached to punishment will allow you to get off the hamster wheel and onto a more mentally healthy track. 
+                        Countless medical professionals and institutions have endorsed journaling as a method to pacify the monkey mind—that is, manage overwhelming emotions and reduce anxiety and stress.
+                      </p>
+                      <p id="p1"> You’ll get to know yourself.</p>
+                      <p> 
+                         Journals can also act as profound pools of personal reflection. Taking time to shut out the loudness of the outside world and reconnect with your thoughts can lead to incredible self-discovery.
+                         The process of pouring out your unadulterated ideas onto a blank page may very well reveal some diamonds in the rough that would otherwise have been swept out the door with the ordinary dust 
+                         of the filtered mind. 
+                         Finally, by continually journaling, you give yourself the privilege of tracking your own evolution and the power to acknowledge how you’ve changed and grown.
+                      </p>
+                      <p id="p1">You’ll gain perspective.</p>
+                      <p> 
+                        While journaling may inadvertently help you find solutions to troubling problems, one of the more important functions it serves is granting you the ability to gain perspective 
+                        on your thoughts and feelings. So rather than fixing emotional challenges straightaway, writing about them simply changes your relationship with these life hurdles,
+                        which can make them more conquerable in the long run.
+                      </p>
+                      <p id="p1">You’ll harness your creativity.</p>
+                      <p> Everyone is creative, but few have the power to unlock that creativity and cajole it out into the open. Journaling, especially stream-of-consciousness journaling, 
+                          is a great way to tap into our creative genius. Not to mention, once you get a great idea out into the light, you can nurture what was a small seedling into a sequoia of brilliance.
+                          Break down the stigma and show your support for journaling by sharing your own experience with the process in the comment section below or via our Facebook or Twitter feeds.
+                      </p>
+
+                  </div>
+                <div class="col-sm-12 col-md-6 col-lg-4" id="righttxt">
+                  <div>
+                    <h6 class="display-6 text-center my-5"> What is Yoga? </h6>
+                    <div class="img-fluid text-center">
+                      <a href="{% url 'blog' %}"> <img src="{% static 'img/yogapic.jpg'%}" id="yoga" alt="Avatar"> </a>
+                    </div>
+                    <p class="my-2">Dozens of scientific trials of varying quality have been published on yoga. While there's scope for more rigorous studies on its health benefits,
+                       most studies suggest yoga is a safe and effective way to increase physical activity, especially strength, flexibility and balance... </p>
+                    <div class="link"> 
+                      <a href="{% url 'blog' %}"> Read More </a>
+                    </div>
+                  </div>
+                    <div>
+                      <h6 class="display-6 text-center my-5"> Meditation: A simple, fast way to reduce stress. </h6>
+                      <div class="img-fluid text-center">
+                        <a href="{% url 'meditation' %}"> <img src="{% static 'img/meditationpic.jpg'%}" id="meditation" alt="Avatar"> </a>
+                      </div>
+                        <p class="my-2"> Meditation can wipe away the day's stress, bringing with it inner peace. See how you can easily learn to practice
+                          meditation whenever you need it most. 
+                          If stress has you anxious, tense and worried, consider trying meditation.
+                          t's simple and inexpensive, and it doesn't require any special equipment...</p>
+                          <div class="link"> 
+                            <a href="{% url 'meditation' %}"> Read More </a>
+                          </div>
+                      </div>
+                    <div>
+                      <h6 class="display-6 text-center my-5"> How reading affects your brain. </h6>
+                      <div class="img-fluid text-center">
+                        <a href="{% url 'reading' %}"> <img src="{% static 'img/readingpic.jpg' %}" id="reading" alt="Avatar"> </a>
+                      </div>
+                        <p class="my-2">As you read these words, your brain is decoding a series of abstract symbols and synthesizing the results into complex ideas. It’s an amazing process. The English writer Katie Oldham described the “surreal” act of reading a book this way: 
+                          “You stare at marked slices of tree for hours on end, hallucinating vividly.”</p>
+                          <div class="link"> 
+                            <a href="{% url 'reading' %}"> Read More </a>
+                          </div>
+                      </div>
+                    <div>
+                      <h6 class="display-6 text-center my-5"> Social media detox and its importance. </h6>
+                      <div class="img-fluid text-center">
+                        <a href="{% url 'socialmedia' %}"> <img src="{% static 'img/socialpic.jpg '%}" id="socialmedia" alt="Avatar"> </a>
+                      </div>
+                        <p class="my-2">A social media detox gives you a chance to clear your mind. We’re sucked into this online world of pretty filters on models and influencers, a friend’s curated version of their life in photos and captions, 
+                          and news headlines designed to spark an emotional reaction.
+                        </p>
+                        <div class="link"> 
+                          <a href="{% url 'socialmedia' %}"> Read More </a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+          </div> 
+          <!--fillimi i FOOTER-->
+          <footer class=" text-dark pt-5 pb-4" id="footer">
+            <div class="col-md-12">
+               <div class="card-body text-center text-light">
+                  <a href="{% url 'home' %}">
+                   <img src="{% static 'img/s.png' %}" width="75px" height="50px">
+                  </a>
+                  <div class="card-text text-center" > 
+                    <p>Serenity Spa, your daily dose of relaxation! Find us on social media for more. </p>
+                    <a href="www.instagram.com">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                     <a href="www.facebook.com">
+                       <i class="fab fa-facebook" ></i> 
+                    </a>
+                     <a href="www.pinterest">
+                       <i class="fab fa-pinterest"></i>
+                     </a>
+                     <p> All rights reserved! </p>
+                    </div>
+               </div>
+            </div>
+          </footer>
+        <!--fundi i FOOTER-->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
+</html>

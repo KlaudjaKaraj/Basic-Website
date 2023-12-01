@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/us.css' %}">
+        <script type="text/javascript" src="us.js"> </script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap" rel="stylesheet"> 
+        <script src="https://kit.fontawesome.com/1ba212a0ff.js" crossorigin="anonymous"></script> 
+    </head>
+    <body>
+         <!--fillim navbar-->
+         <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+              <a class="navbar-brand text-light" id="us" href="us.html">Getting to know us!</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active text-light" aria-current="page" href="{% url 'home' %}">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active text-light" aria-current="page" href="{% url 'us' %}">About us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active text-light" aria-current="page" href="{% url 'ourservices' %}">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active text-light" aria-current="page" href="{% url 'blog' %}">Blog</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <!--fund navbar-->
+          <div class="container">
+            <div class="card-body" id="maintext">
+              <h5 class="card-title text-center">The story behind Serenity.</h5>
+              <p class="card-text">Serenity is a latin word which means 'peace of mind'. Here we go straight at our purpous, to make 
+                your days calm and peaceful. We are the quietest luxury space in Tirana.
+                Serenity Spa offers a unique feel. A stress -free oasis for rest and relaxation that invites you 
+                to step into the world where time honoured traditions 
+                and spa rituals bring you an authentic experience of total well being.
+             </p>
+           </div>
+           <div class="card-body" id="maintext">
+            <h5 class="card-title text-center">Our mission.</h5>
+            <p class="card-text"> Serenity is a latin word which means 'peace of mind'. Here we go straight at our purpous, to make 
+              your days calm and peaceful. We are the quietest luxury space in Tirana.
+              Serenity Spa offers a unique feel. A stress -free oasis for rest and relaxation that invites you 
+              to step into the world where time honoured traditions 
+              and spa rituals bring you an authentic experience of total well being.
+           </p>
+         </div>
+            <div class="row heading">
+              <div class="card-body">
+                <h2 class="text-center bottom-line ">Meet Our Team</h2>
+              </div>
+            </div>
+            <div class="row team-row">
+              <div class="col-md-4 col-sm-6 team-wrap">
+                <div class="team-member text-center">
+                  <div class="team-img">
+                    <img src="{% static 'img/girl4.jpg' %}" width="150px" height="450px">
+                    <div class="overlay">
+                      <div class="team-details text-center">
+                        <p>
+                          She is a young and detemined girl from Thailand. Her main motivation is working hard on what she can do best, 
+                          giving her clients the best treatment they deserve. She is a real specialist of Thai Massage.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <h6 class="team-title">Meet Alisa</h6>
+                </div>
+              </div>
+              <!-- fund team member1 -->
+              <div class="col-md-4 col-sm-6 team-wrap">
+                <div class="team-member text-center">
+                  <div class="team-img">
+                    <img src="{% static 'img/girl2.jpg'%}" alt="" width="150px" height="450px">
+                    <div class="overlay">
+                      <div class="team-details text-center">
+                        <p>
+                          She is a hard-working girl whose hobby is sharing culture. She loves learning about new places and different
+                          cultures. She introduced us to Indonesian culture and rituals.
+                        </p>
+                        
+                      </div>
+                    </div>
+                  </div>
+                  <h6 class="team-title">Meet Jane</h6> 
+                </div>
+              </div>
+              <!-- fund team member2 -->
+              <div class="col-md-4 col-sm-6 team-wrap">
+                <div class="team-member last text-center">
+                  <div class="team-img">
+                    <img src="{% static 'img/girl6.jpg'%}" alt="" width="150px" height="450px">
+                    <div class="overlay">
+                      <div class="team-details text-center">
+                        <p>
+                          Our therapist from Japan. She has a fascinating mindset and willing to adapt new things.
+                          This is her first experience here in Albania and she is so in love with this country.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <h6 class="team-title">Meet Sasha</h6>
+                </div>
+              </div>
+              <!-- fund team member3 -->
+            </div>
+          </div>
+          <!--fund navbar-->
+          <footer class=" text-dark pt-5 pb-4" id="footer">
+                <div class="col-md-12">
+                   <div class="card-body text-center text-light">
+                      <a href="{% url 'home' %}">
+                       <img src="{% static 'img/s.png'%}" width="75px" height="50px">
+                      </a>
+                      <div class="card-text text-center" > 
+                        <p>Serenity Spa, your daily dose of relaxation! Find us on social media for more. </p>
+                        <a href="www.instagram.com">
+                          <i class="fab fa-instagram"></i>
+                        </a>
+                         <a href="www.facebook.com">
+                           <i class="fab fa-facebook" ></i> 
+                        </a>
+                         <a href="www.pinterest">
+                           <i class="fab fa-pinterest"></i>
+                         </a>
+                         <p> All rights reserved! </p>
+                        </div>
+                   </div>
+                </div>
+        </footer>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
+</html>
